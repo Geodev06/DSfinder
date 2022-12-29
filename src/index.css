@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.map-container {
+  height: 400px;
+
+
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  background-color: aliceblue;
+
+}
+
+.leaflet-container .leaflet-routing-container {
+  background-color: rgb(34 197 94);
+  color: white;
+  overflow-y: scroll;
+  height: 350px;
+}
+
+.leaflet-container .leaflet-routing-container table tr:nth-child(even) {
+  background-color: gainsboro;
+  color: black;
+}
+
+.leaflet-container .leaflet-routing-container .leaflet-routing-alt h2 {
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+}
+
+.leaflet-container .leaflet-routing-container .leaflet-routing-alt h3 {
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+}
+
+.custom-w {
+  width: 300px
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgb(69, 97, 170);
+  border-radius: 20px
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 1);
+  background-color: rgb(90, 241, 158);
+}
+
+.fade-in {
+  animation-name: example;
+  animation-duration: .5s;
+}
+
+@keyframes example {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

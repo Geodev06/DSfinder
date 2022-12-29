@@ -1,1 +1,1 @@
-# DSfinder
+# WBSAIS - Drugstore finder
